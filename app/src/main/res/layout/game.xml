@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Pääpelin ikkuna-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:background="@drawable/mainmenu"
+                                             android:layout_height="match_parent">
+
+    <!--Vihollissotilaan kortin kuva-->
+    <ImageView
+            android:layout_width="57dp"
+            android:layout_height="90dp" app:srcCompat="@drawable/knight"
+            android:id="@+id/vihuSotilas" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.215"
+            app:layout_constraintVertical_bias="0.377"/>
+    <!--Vihollistaikurin kortin kuva-->
+    <ImageView
+            android:layout_width="67dp"
+            android:layout_height="95dp" app:srcCompat="@drawable/maagi"
+            android:id="@+id/vihuTaikuri" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintVertical_bias="0.38"/>
+    <!--Vihollisjousimiehen kortin kuva-->
+    <ImageView
+            android:layout_width="72dp"
+            android:layout_height="83dp" app:srcCompat="@drawable/ranger"
+            android:id="@+id/vihuJousimies" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.885"
+            app:layout_constraintVertical_bias="0.392"/>
+    <!--Pelaajan sotilaskortin kuva-->
+    <ImageView
+            android:layout_width="64dp"
+            android:layout_height="93dp" app:srcCompat="@drawable/knight"
+            android:id="@+id/sotilas" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintVertical_bias="0.766"/>
+    <!--Pelaajan taikurikortin kuva-->
+    <ImageView
+            android:layout_width="61dp"
+            android:layout_height="92dp" app:srcCompat="@drawable/maagi"
+            android:id="@+id/taikuri" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintVertical_bias="0.767"/>
+    <!--Pelaajan jousimieskortin kuva-->
+    <ImageView
+            android:layout_width="85dp"
+            android:layout_height="110dp" app:srcCompat="@drawable/ranger"
+            android:id="@+id/jousimies" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.883"
+            app:layout_constraintVertical_bias="0.773"/>
+    <!--Pelaajan sotilaskorttia osoittava nuoli-->
+    <ImageView
+            android:layout_width="31dp"
+            android:layout_height="32dp" app:srcCompat="@drawable/alasnuoli"
+            android:id="@+id/nuoli1"
+            app:layout_constraintBottom_toTopOf="@+id/sotilas" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/vihuSotilas" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.244" app:layout_constraintVertical_bias="0.861"/>
+    <!--Pelaaajan taikurikorttia osoittava kortti-->
+    <ImageView
+            android:layout_width="36dp"
+            android:layout_height="38dp" app:srcCompat="@drawable/alasnuoli"
+            android:id="@+id/nuoli2"
+            app:layout_constraintBottom_toTopOf="@+id/taikuri" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/vihuTaikuri" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.509" app:layout_constraintVertical_bias="0.875"/>
+    <!--Pelaajan jousimieskorttia osoittava nuoli-->
+    <ImageView
+            android:layout_width="30dp"
+            android:layout_height="34dp" app:srcCompat="@drawable/alasnuoli"
+            android:id="@+id/nuoli3" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/jousimies" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/vihuJousimies" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.823" app:layout_constraintVertical_bias="0.892"/>
+    <!--Pelaajan sotilaskortin painike-->
+    <Button
+            android:layout_width="79dp"
+            android:layout_height="102dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/sotilasNappi" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.231"
+            app:layout_constraintVertical_bias="0.763"/>
+    <!--Pelaajan taikurikortin nappi-->
+    <Button
+            android:layout_width="87dp"
+            android:layout_height="101dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/taikuriNappi" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintVertical_bias="0.763"/>
+    <!--Pelaajan jousimiehen nappi-->
+    <Button
+            android:layout_width="87dp"
+            android:layout_height="113dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/jousimiesNappi" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.879"
+            app:layout_constraintVertical_bias="0.792"/>
+    <!--Vihollisen sotilaan nappi-->
+    <Button
+            android:layout_width="77dp"
+            android:layout_height="101dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/vihuSotilasNappi" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.207"
+            app:layout_constraintVertical_bias="0.384"/>
+    <!--Vihollisen taikurin nappi-->
+    <Button
+            android:layout_width="77dp"
+            android:layout_height="106dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/vihuTaikuriNappi" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.387" app:layout_constraintHorizontal_bias="0.515"/>
+    <!--Vihollisen jousimiehen nappi-->
+    <Button
+            android:layout_width="85dp"
+            android:layout_height="95dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/vihuJousimiesNappi" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintVertical_bias="0.398"/>
+    <!--Valitse hyökkäävä kortti-kuva-->
+    <ImageView
+            android:layout_width="187dp"
+            android:layout_height="89dp" app:srcCompat="@drawable/valitsehyokkaavakortti"
+            android:id="@+id/hyokkaysKortti"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.116"/>
+    <!--Valitse kohde-kuva-->
+    <ImageView
+            android:layout_width="191dp"
+            android:layout_height="53dp" app:srcCompat="@drawable/valitsekohde"
+            android:id="@+id/kohde"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintVertical_bias="0.138"/>
+</android.support.constraint.ConstraintLayout>

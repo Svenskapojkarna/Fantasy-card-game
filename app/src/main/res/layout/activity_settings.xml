@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Asetusruutu-->
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainmenu">
+
+    <!--Takaisin-painikkeen kuva-->
+    <ImageView
+            android:layout_width="108dp"
+            android:layout_height="81dp" app:srcCompat="@drawable/takaisinnappi"
+            android:id="@+id/imageView" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+
+    <!--Takaisin-painike-->
+    <Button
+            android:layout_width="119dp"
+            android:layout_height="88dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/backButton1" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <!--Nimen vaihdon kuva-->
+    <ImageView
+            android:layout_width="178dp"
+            android:layout_height="47dp" app:srcCompat="@drawable/nimenvaihto"
+            android:id="@+id/imageView2" android:layout_marginTop="232dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.497"/>
+    <!--Nimen vaihto-painike-->
+    <Button
+            android:layout_width="221dp"
+            android:layout_height="66dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/changeName" android:layout_marginTop="224dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.505"/>
+    <!--Ohjeet painikkeen kuva-->
+    <ImageView
+            android:layout_width="219dp"
+            android:layout_height="41dp" app:srcCompat="@drawable/ohjeet"
+            android:id="@+id/imageView3" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+    <!--Ohjeet-painike-->
+    <Button
+            android:layout_width="186dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/rulesButton" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.516"/>
+</android.support.constraint.ConstraintLayout>
