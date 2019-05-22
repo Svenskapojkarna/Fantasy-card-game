@@ -19,37 +19,22 @@
     <string name="Game">Game</string>
     <string name="varaNimi">Käyttäjänimi</string>
     <string name="saannot">Fantasiakorttipeli on peli, jossa soturit, maagit ja jousimiehet taistelevat keskenään.
-        Pelin ideana on koota taistelupakka ja sillä pakalla päihittää vastustaja.
+        Pelin ideana on valita kortit ja niillä korteilla päihittää vastustaja.
 
-        Peli koostuu kahdesta suuremmasta vaiheesta:
-        1. Pakan rakentaminen, jossa (20) kortin pakka rakennetaan kolmesta erilaisesta kortista. Nämä kortit ovat:
+        Peli koostuu kahdesta vaiheesta:
+        1. Korttien valitseminen, jossa valitaan 1 - 3 korttia peliin. Nämä kortit ovat:
         Soturi,
         Maagi,
         Jousimies.
 
-        Näistä korteista voi valita (20) korttia ihan miten haluaa. Esimerkiksi pakka voisi sisältää 20 maagia tai
-        toisena esimerkkinä 5 soturia, 10 jousimiestä ja 5 maagia.
-
         2. Toinen vaihe on varsinainen taistelu.
-        Varsinaisessa taistelussa aloitetaan peli niin, että arvotaan kumpi aloittaa. Aloittaja nostaa rakennetusta
-        pakasta (10) käsikorttia. Pelaaja voi sitten päättää käsikorteistaan neljä korttia, jotka aikoo pelata.
-        Pelattuaan kortit kentälle, siirtyy vuoro vastustajalle, joka vastaavasti nostaa 10 korttia ja pelaa neljä.
-        Seuraavaksi alkaa taisteluvaihe, jonka aloittaa aloittanut pelaaja.
+        Taistelussa valitaan ensin kortti, jolla halutaan hyökätä. Tämän jälkeen valitaan kohde, jonka kimppuun hyökätään.
+        Jos pelaaja onnistuu painamaan vastustajan korttia, vastustajan kortti kuolee.
+        Jos pelaaja painaa ohi, vuoro menetetään.
+        Kun pelaajan vuoro on päättynyt, vastustaja hyökkää johonkin pelaajan korttiin.
+        Jos pelaaja onnistuu tappamaan kaikki vastustajan kortit, voittaa hän pelin.
+        Jos vastustaja onnistuu ensin tappamaan pelaajan kortit, pelaaja häviää.
 
-        Taisteluvaihe
-
-        Aloittanut pelaaja valitsee, mitkä kortit hyökkäävät ja minkä vastustajan kortin kimppuun.
-        Kortin hyökätessä toisen kortin kimppuun, vähennetään puolustavan kortin elämäpisteitä
-        hyökkäävän kortin hyökkäyspisteiden verran. Kortin elämäpisteiden ollessa nolla tai vähemmän,
-        kortti poistetaan hautausmaalle eli pois pelistä.
-
-        Kierros päättyy pelaajan menettäessä kaikki kentällä olevat kortit kentältä hautausmaalle, tai jos
-        kaikki kentällä olevat kortit ovat hyökänneet kerran. Pelaaja, jolla on eniten kortteja tai
-        korttien yhteiselämäpisteitä voittaa kierroksen.
-        Tämän jälkeen aloitetaan uusi kierros, jossa aloittaa pelaaja, joka ei aloittanut viimeksi
-        ja pelaaja nostaa pakasta kortteja, kunnes on (10) korttia kädessä. Kierros jatkuu normaalisti.
-
-        Kun jompikumpi pelaaja voittaa kaksi kierrosta, peli päättyy ja voittajaksi julistetaan kaksi
-        kierrosta voittanut pelaaja.
+        Pelin päättymisen jälkeen pelaaja voi palata takaisin alkuvalikkoon.
     </string>
 </resources>
